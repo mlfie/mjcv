@@ -1,4 +1,4 @@
-require 'mlfielib/geom/point'
+require 'mjcv/geom/point'
 
 module Mlfielib
   module Fitting

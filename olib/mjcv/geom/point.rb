@@ -1,9 +1,9 @@
-require 'mlfielib/geom/point_op'
+require 'mjcv/geom/point_op'
 
-module Mlfielib
+module MjCV
   module Geom
     class Point
-      include Mlfielib::Geom::PointOp
+      include MjCV::Geom::PointOp
 
       attr_accessor :x, :y
 

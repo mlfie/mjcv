@@ -1,4 +1,4 @@
-require 'mlfielib/geom/point'
+require 'mjcv/geom/point'
 require 'mlfielib/fitting/line_fitting'
 require 'mlfielib/fitting/least_median_squares_line_fitting'
 
@@ -24,10 +24,10 @@ module Mlfielib
       end
   
       def create_origin(intercept)
-        Mlfielib::Geom::Point.new(0, intercept)
+        MjCV::Geom::Point.new(0, intercept)
       end
       def create_vector(slope)
-        Mlfielib::Geom::Point.new(1, slope)
+        MjCV::Geom::Point.new(1, slope)
       end
     end
   end

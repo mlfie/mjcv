@@ -1,4 +1,4 @@
-module Mlfielib
+module MjCV
   module Geom
     module PointOp
       def distance(p)

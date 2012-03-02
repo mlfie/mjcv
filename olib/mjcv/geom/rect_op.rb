@@ -1,4 +1,4 @@
-module Mlfielib
+module MjCV
   module Geom
     module RectOp
       def intersect?(r)

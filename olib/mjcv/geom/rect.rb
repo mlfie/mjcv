@@ -1,15 +1,15 @@
-require 'mlfielib/geom/point'
-require 'mlfielib/geom/rect_op'
+require 'mjcv/geom/point'
+require 'mjcv/geom/rect_op'
 
-module Mlfielib
+module MjCV
   module Geom
     class Rect
-      include Mlfielib::Geom::RectOp
+      include MjCV::Geom::RectOp
 
       attr_accessor :x, :y, :position, :width, :height
 
       def initialize(x=0, y=0, width=0, height=0)
-        @position = Mlfielib::Geom::Point.new(x, y)
+        @position = MjCV::Geom::Point.new(x, y)
         @width, @height = width, height
       end
 

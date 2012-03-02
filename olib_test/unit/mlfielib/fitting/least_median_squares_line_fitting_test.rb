@@ -8,10 +8,10 @@ class LeastMedianSquaresLineFittingTest < Test::Unit::TestCase
     @points = []
 
     11.times{|i|
-      @points << Mlfielib::Geom::Point.new(i, 3 * i)
+      @points << MjCV::Geom::Point.new(i, 3 * i)
     }
     10.times{
-      @points << Mlfielib::Geom::Point.new(rand(20), rand(20))
+      @points << MjCV::Geom::Point.new(rand(20), rand(20))
     }
     @fitting = Mlfielib::Fitting::LeastMedianSquaresParamSearch.new(
       Mlfielib::Fitting::LMSLineFittingModel.new(@points), 0.5, 20000)
