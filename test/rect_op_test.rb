@@ -1,11 +1,8 @@
-require 'test/unit'
 require 'test_helper'
-require 'mlfielib/geom/rect_op'
-require 'mlfielib/geom/point'
 
 class RectOpTest < Test::Unit::TestCase
   class Rect
-    include Mlfielib::Geom::RectOp
+    include MjCV::Geom::RectOp
     attr_accessor :position, :width, :height
     def initialize(position,width,height)
       @position=position
@@ -15,9 +12,9 @@ class RectOpTest < Test::Unit::TestCase
   end
 
   def setup
-    @r0 = Rect.new(Mlfielib::Geom::Point.new(3,3), 4, 4)
-    @r1 = Rect.new(Mlfielib::Geom::Point.new(5,5), 6, 6)
-    @r2 = Rect.new(Mlfielib::Geom::Point.new(8,8), 6, 6)
+    @r0 = Rect.new(MjCV::Geom::Point.new(3,3), 4, 4)
+    @r1 = Rect.new(MjCV::Geom::Point.new(5,5), 6, 6)
+    @r2 = Rect.new(MjCV::Geom::Point.new(8,8), 6, 6)
   end
 
   def test_intersect

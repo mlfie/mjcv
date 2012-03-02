@@ -1,10 +1,4 @@
-require 'test/unit'
 require 'test_helper'
-require 'mjcv/fitting/least_median_squares_line_fitting'
-require 'mjcv/fitting/line_fitting'
-require 'mjcv/cv/filter'
-require 'mjcv/cv/selector'
-require 'mjcv/cv/pai'
 
 class FilterTest < Test::Unit::TestCase
   def setup
@@ -23,7 +17,7 @@ class FilterTest < Test::Unit::TestCase
   def test_filter
     filtered_pais = @filter.filter(@pais)
     filtered_pais.each do |pai|
-      #assert_in_delta 3*pai.x, pai.y, 1
+      assert_in_delta 3*pai.x, pai.y, 1
     end
 
     selector = MjCV::CV::Selector.new

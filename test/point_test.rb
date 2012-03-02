@@ -1,11 +1,9 @@
-require 'test/unit'
 require 'test_helper'
-require 'mlfielib/geom/point'
 
-include Mlfielib::Geom
+include MjCV::Geom
 
 class PointTest < Test::Unit::TestCase
-  include Mlfielib::Geom::Point::Test
+  include MjCV::Geom::Point::Test
 
   def setup
     @model = Point.new

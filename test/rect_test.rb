@@ -1,12 +1,9 @@
-require 'test/unit'
 require 'test_helper'
-require 'mlfielib/geom/rect'
-require 'mlfielib/geom/rect_op'
 
-include Mlfielib::Geom
+include MjCV::Geom
 
 class RectTest < Test::Unit::TestCase
-  include Mlfielib::Geom::RectOp::Test
+  include MjCV::Geom::RectOp::Test
 
   def setup
     @model = Rect.new(1,2, 5, 10)

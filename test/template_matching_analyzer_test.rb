@@ -1,13 +1,4 @@
-require 'test/unit'
 require 'test_helper'
-require 'mjcv/fitting/least_median_squares_line_fitting'
-require 'mjcv/fitting/line_fitting'
-require 'mjcv/cv/template_matching_analyzer'
-require 'mjcv/cv/filter'
-require 'mjcv/cv/selector'
-require 'mjcv/cv/pai'
-require 'rubygems'
-require 'opencv'
 require 'cv_test_helper'
 
 include OpenCV
@@ -23,7 +14,7 @@ class TemplateMatchingAnalyzerTest < Test::Unit::TestCase
   def test_analyze
     #path = "olib_test/unit/mlfielib/cv/test_img/59.jpg"
     #path = "olib_test/unit/mlfielib/cv/test_img/92.jpg"
-    path = "olib_test/unit/mlfielib/cv/test_img/test004.jpg"
+    path = "#{File.dirname(__FILE__)}/test_img/test004.jpg"
     expects = %w[m3 m3 m3 j6 j6 j6 j2 j2 p3 p5 m7 m8 m9 p4]
     $__test_img = IplImage.load(path, CV_LOAD_IMAGE_COLOR)
 

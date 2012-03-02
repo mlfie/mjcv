@@ -1,10 +1,8 @@
-require 'test/unit'
 require 'test_helper'
-require 'mlfielib/geom/point_op'
 
 class Point2DOpTest < Test::Unit::TestCase
   class Point
-    include Mlfielib::Geom::PointOp
+    include MjCV::Geom::PointOp
     attr_accessor :x, :y;
     def initialize(x = 0.0, y = 0.0)
       @x = x

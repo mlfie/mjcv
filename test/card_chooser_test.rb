@@ -1,6 +1,4 @@
-require 'test/unit'
 require 'test_helper'
-require 'mjcv/util/card_chooser'
 
 class CardChooserTest < Test::Unit::TestCase
   def setup

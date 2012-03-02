@@ -1,6 +1,4 @@
-require 'test/unit'
 require 'test_helper'
-require 'mjcv/fitting/line_fitting'
 
 class LineFittingTest < Test::Unit::TestCase
   def setup

@@ -1,7 +1,4 @@
-require 'test/unit'
 require 'test_helper'
-require 'mjcv/fitting/least_median_squares_line_fitting'
-require 'mjcv/fitting/line_fitting'
 
 class LeastMedianSquaresLineFittingTest < Test::Unit::TestCase
   def setup
