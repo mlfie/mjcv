@@ -146,7 +146,7 @@ Gem::Specification.new do |s|
      "test/test_img/test_komagahouse2.jpg",
      "test/test_img/test_komagahouse3.jpg"
   ]
-  s.homepage = "http://github.com/ginok/mjcv"
+  s.homepage = "http://github.com/mlfie/mjcv"
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"
