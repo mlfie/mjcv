@@ -1,6 +1,6 @@
 require 'mlfielib/util/card_chooser'
 
-module Mlfielib
+module MjCV
   module Fitting
     class LeastMedianSquaresParamSearch
       attr_accessor :fitting_model, :error_ratio, :step_num

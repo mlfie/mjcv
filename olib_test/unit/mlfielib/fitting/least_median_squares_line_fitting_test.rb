@@ -1,7 +1,7 @@
 require 'test/unit'
 require 'test_helper'
-require 'mlfielib/fitting/least_median_squares_line_fitting'
-require 'mlfielib/fitting/line_fitting'
+require 'mjcv/fitting/least_median_squares_line_fitting'
+require 'mjcv/fitting/line_fitting'
 
 class LeastMedianSquaresLineFittingTest < Test::Unit::TestCase
   def setup
@@ -13,8 +13,8 @@ class LeastMedianSquaresLineFittingTest < Test::Unit::TestCase
     10.times{
       @points << MjCV::Geom::Point.new(rand(20), rand(20))
     }
-    @fitting = Mlfielib::Fitting::LeastMedianSquaresParamSearch.new(
-      Mlfielib::Fitting::LMSLineFittingModel.new(@points), 0.5, 20000)
+    @fitting = MjCV::Fitting::LeastMedianSquaresParamSearch.new(
+      MjCV::Fitting::LMSLineFittingModel.new(@points), 0.5, 20000)
   end
 
 

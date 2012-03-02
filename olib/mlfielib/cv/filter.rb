@@ -1,6 +1,6 @@
 require 'mjcv/geom/point'
-require 'mlfielib/fitting/line_fitting'
-require 'mlfielib/fitting/least_median_squares_line_fitting'
+require 'mjcv/fitting/line_fitting'
+require 'mjcv/fitting/least_median_squares_line_fitting'
 
 module Mlfielib
   module CV
@@ -8,7 +8,7 @@ module Mlfielib
       attr_reader :origin, :vector
       def filter(pailist)
         error_ratio = 10.0 / pailist.size > 0.5 ? 0.5 : 10.0 / pailist.size
-        fitting = Mlfielib::Fitting::LeastMedianSquaresParamSearch.new(Mlfielib::Fitting::LMSLineFittingModel.new(pailist.select{|pai| pai.direction == :top}), error_ratio)
+        fitting = MjCV::Fitting::LeastMedianSquaresParamSearch.new(MjCV::Fitting::LMSLineFittingModel.new(pailist.select{|pai| pai.direction == :top}), error_ratio)
         intercept, slope = fitting.search
         @origin = create_origin(intercept)
         @vector = create_vector(slope)

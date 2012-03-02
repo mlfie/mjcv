@@ -1,6 +1,6 @@
 require 'mjcv/geom/point'
 
-module Mlfielib
+module MjCV
   module Fitting
     class LeastDistanceSquaresLineFitting
       class Result

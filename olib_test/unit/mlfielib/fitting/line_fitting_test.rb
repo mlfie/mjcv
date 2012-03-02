@@ -1,15 +1,15 @@
 require 'test/unit'
 require 'test_helper'
-require 'mlfielib/fitting/line_fitting'
+require 'mjcv/fitting/line_fitting'
 
 class LineFittingTest < Test::Unit::TestCase
   def setup
-    @fitting = Mlfielib::Fitting::LeastDistanceSquaresLineFitting.new
+    @fitting = MjCV::Fitting::LeastDistanceSquaresLineFitting.new
   end
 
   def test_points_and_add
     assert_equal [], @fitting.points
-    p = Mlfielib::Geom::Point.new
+    p = MjCV::Geom::Point.new
     assert @fitting.add(p)
     assert_equal 1, @fitting.points.size
   end
@@ -58,13 +58,13 @@ class LineFittingTest < Test::Unit::TestCase
 
   def set_points(fitting, slope, intercept, num = 20)
     num.times{|i|
-      fitting.add(Mlfielib::Geom::Point.new(i, i*slope + intercept))
+      fitting.add(MjCV::Geom::Point.new(i, i*slope + intercept))
     }
   end
 
   def set_points_with_error(fitting, slope, intercept, scale = 1, num = 20)
     num.times{|i|
-      fitting.add(Mlfielib::Geom::Point.new(
+      fitting.add(MjCV::Geom::Point.new(
         i + error(scale),
         i*slope + intercept + error(scale)))
     }
