@@ -1,4 +1,4 @@
-require 'mlfielib/util/card_chooser'
+require 'mjcv/util/card_chooser'
 
 module MjCV
   module Fitting
@@ -35,7 +35,7 @@ module MjCV
     class LMSLineFittingModel
       def initialize(points)
         @points = points
-        @chooser = Mlfielib::Util::CardChooser.new(@points.size)
+        @chooser = MjCV::Util::CardChooser.new(@points.size)
       end
   
       def sample_number

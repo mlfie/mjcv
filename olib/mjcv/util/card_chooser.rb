@@ -1,4 +1,4 @@
-module Mlfielib
+module MjCV
   module Util
     class CardChooser
       attr_reader :current_size
