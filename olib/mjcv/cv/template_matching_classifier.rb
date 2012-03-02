@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*-
 require "rubygems"
 require "opencv"
-require 'mlfielib/cv/pai'
-require 'mlfielib/cv/paienum'
-require 'mlfielib/cv/template_matching'
+require 'mjcv/cv/pai'
+require 'mjcv/cv/paienum'
+require 'mjcv/cv/template_matching'
 
-module Mlfielib
+module MjCV
   module CV
     class TemplateMatchingClassifier
       include OpenCV
-      include Mlfielib::CV::TemplateMatching
+      include MjCV::CV::TemplateMatching
 
       DIRPATH = File.expand_path('../base', __FILE__)
       KEYS = [:type, :direction, :symmetric, :threshold, :image_paths]

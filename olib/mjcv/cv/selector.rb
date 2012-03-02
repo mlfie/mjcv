@@ -1,6 +1,6 @@
 require 'opencv'
 
-module Mlfielib
+module MjCV
   module CV
     class Selector
       include OpenCV

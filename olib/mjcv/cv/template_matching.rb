@@ -1,7 +1,7 @@
 require 'opencv'
-require 'mlfielib/cv/pai'
+require 'mjcv/cv/pai'
 
-module Mlfielib
+module MjCV
   module CV
     module TemplateMatching
       class TemplateMatcher

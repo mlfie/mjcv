@@ -2,7 +2,7 @@ require 'mjcv/geom/point'
 require 'mjcv/fitting/line_fitting'
 require 'mjcv/fitting/least_median_squares_line_fitting'
 
-module Mlfielib
+module MjCV
   module CV
     class Filter
       attr_reader :origin, :vector

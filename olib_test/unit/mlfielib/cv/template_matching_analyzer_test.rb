@@ -2,10 +2,10 @@ require 'test/unit'
 require 'test_helper'
 require 'mjcv/fitting/least_median_squares_line_fitting'
 require 'mjcv/fitting/line_fitting'
-require 'mlfielib/cv/template_matching_analyzer'
-require 'mlfielib/cv/filter'
-require 'mlfielib/cv/selector'
-require 'mlfielib/cv/pai'
+require 'mjcv/cv/template_matching_analyzer'
+require 'mjcv/cv/filter'
+require 'mjcv/cv/selector'
+require 'mjcv/cv/pai'
 require 'rubygems'
 require 'opencv'
 require 'cv_test_helper'
@@ -16,7 +16,7 @@ class TemplateMatchingAnalyzerTest < Test::Unit::TestCase
   def setup
     #for debug mode, uncomment below
     #@@mode = :debug
-    @tma = Mlfielib::CV::TemplateMatchingAnalyzer.new
+    @tma = MjCV::CV::TemplateMatchingAnalyzer.new
     #$__debug_window ||= GUI::Window.new "debug"
   end
 

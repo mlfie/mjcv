@@ -1,10 +1,10 @@
-require 'mlfielib/cv/template_matching_classifier'
-require 'mlfielib/cv/filter'
-require 'mlfielib/cv/selector'
+require 'mjcv/cv/template_matching_classifier'
+require 'mjcv/cv/filter'
+require 'mjcv/cv/selector'
 require 'opencv'
 include OpenCV
 
-module Mlfielib
+module MjCV 
   module CV
     class TemplateMatchingAnalyzer
       def initialize

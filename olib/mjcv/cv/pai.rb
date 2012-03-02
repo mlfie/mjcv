@@ -3,7 +3,7 @@ require 'mjcv/geom/rect'
 require 'mjcv/geom/point_op'
 require 'mjcv/geom/rect_op'
 
-module Mlfielib
+module MjCV
   module CV
     class Pai
       include MjCV::Geom::PointOp

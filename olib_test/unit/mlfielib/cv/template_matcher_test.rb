@@ -2,11 +2,11 @@ require 'test/unit'
 require 'test_helper'
 require 'mjcv/fitting/least_median_squares_line_fitting'
 require 'mjcv/fitting/line_fitting'
-require 'mlfielib/cv/template_matching_analyzer'
-require 'mlfielib/cv/template_matching'
-require 'mlfielib/cv/filter'
-require 'mlfielib/cv/selector'
-require 'mlfielib/cv/pai'
+require 'mjcv/cv/template_matching_analyzer'
+require 'mjcv/cv/template_matching'
+require 'mjcv/cv/filter'
+require 'mjcv/cv/selector'
+require 'mjcv/cv/pai'
 require 'rubygems'
 require 'opencv'
 require 'cv_test_helper'
@@ -14,11 +14,11 @@ require 'cv_test_helper'
 include OpenCV
 class TemplateMatcherTest < Test::Unit::TestCase
   include CvTestHelper
-  include Mlfielib::CV
-  include Mlfielib::CV::TemplateMatching
+  include MjCV::CV
+  include MjCV::CV::TemplateMatching
 
   def setup
-    @path = File.expand_path('../../../../../olib/mlfielib/cv/base', __FILE__)
+    @path = File.expand_path('../../../../../olib/mjcv/cv/base', __FILE__)
     @test_path = File.expand_path('../test_img', __FILE__)
     @matcher = TemplateMatcher.new(
       :type => PaiEnum.type_e::J7,

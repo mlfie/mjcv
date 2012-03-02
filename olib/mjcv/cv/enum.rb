@@ -1,4 +1,4 @@
-module Mlfielib
+module MjCV
   module CV
     class Enum
     

@@ -1,6 +1,6 @@
-require 'mlfielib/cv/enum'
+require 'mjcv/cv/enum'
 
-module Mlfielib
+module MjCV
   module CV
     class PaiEnum
         @@type = Enum.new("Type", :J1, :J2, :J3, :J4, :J5, :J6, :J7,
