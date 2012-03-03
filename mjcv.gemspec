@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ginok"]
   s.date = "2012-03-03"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Computer Vision Library for Mahjang. It can detect pais from images."
   s.email = "miragino@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE",
@@ -150,7 +150,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Computer Vison Library for Mahjang"
   s.test_files = [
     "test/card_chooser_test.rb",
      "test/cv_test_helper.rb",
