@@ -165,7 +165,7 @@ Gem::Specification.new do |s|
      "test/test_helper.rb"
   ]
 
-  s.add_dependency('opencv', '>=0.0.6')
+  s.add_dependency('opencv', '=0.0.6')
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
